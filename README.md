@@ -1,5 +1,4 @@
 # Mon repo pro
-## effective-invention
 
 Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les liens vers les projets que j'ai eu l'occasion de réaliser. Bonne visite !
 
@@ -22,7 +21,7 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
 Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusivement axés sur du JS.
 
  - Devinette
- - Shifumi
+ - [Shifumi](https://github.com/Shi974/shifumi)
  - Kasbrik
 
 # N'hésitez pas à me contacter pour plus d'infos
@@ -30,4 +29,4 @@ Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusiveme
 > mail
 > website
 > tel
-> blabla
+> item 4
