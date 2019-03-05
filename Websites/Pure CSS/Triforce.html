@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Triforce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Felipa');
+
+        #main {
+            background: #00764b;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box {
+            /*outline: 1px solid red;*/
+            position: relative;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid gold;
+        }
+
+        .second {
+            position: absolute;
+            top: 100%;
+            left: -50%;
+        }
+
+        .troisieme {
+            position: absolute;
+            top: 100%;
+            right: -50%;
+        }
+
+        #txt {
+            position: absolute;
+            bottom: 5%;
+            font-family: 'Felipa', sans-serif;
+            font-size: 100%;
+            color: gold;
+            animation: grow 5s infinite;
+        }
+
+        @keyframes grow {
+            50% {
+                transform: scale(2.5);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="box">
+            <div class="triangle premier"></div>
+            <div class="triangle second"></div>
+            <div class="triangle troisieme"></div>
+        </div>
+        <div id="txt">Hey! Listen!</div>
+    </div>
+</body>
+</html>

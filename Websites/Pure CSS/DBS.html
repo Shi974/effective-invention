@@ -1,0 +1,400 @@
+<html>
+
+    <head>
+        <title>DBS</title>
+        <style>
+
+            /* LOGO =/= codepen */
+            #logo-section {
+                background-color: white;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+                .logo img {
+                    max-width: 50%;
+                    max-height: auto;
+                }
+                .leg img {
+                    max-width: 50%;
+                    max-height: auto;
+                }
+
+            /* KURIRIN */
+            #krilin {
+                background-color: #ffd7c1;
+                height: 100vh;
+            }
+
+                #gridk {
+                    width: 50vh;
+                    height: 50vh;
+                    /*border: 1px solid black;*/
+                    margin: auto;
+                    position: relative;
+                    top: 25%;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 1fr 1fr 1fr;
+                }
+
+                    .point {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: #ecaa92;
+                        align-self: center;
+                        justify-self: center;
+                    }
+
+            /* BURUMA */
+            #bulma {
+                background-color: #53ddb9;
+                height: 100vh;
+            }
+                #lineb {
+                    display: flex;
+                    position: relative;
+                    top: 30%;
+                    justify-content: space-around;
+                    width: 70%;
+                    margin: auto;
+                }
+                    #eye {
+                        width: 25vh;
+                        height: 40vh;
+                        background-color: white;
+                        position: relative;
+                        /*top: 25%;
+                        left: 25%;*/
+                        border-radius: 70% 40% 0 0 ;
+                        border: 2px solid black;
+                    }
+                        #eyecolor {
+                                width: 60%;
+                                height: 80%;
+                                background-color: #24acf2;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                                border-radius: 60% 30% 0 0;
+                                border: 1px solid black;
+                            }
+                            #bubble {
+                                width: 50%;
+                                height: 30%;
+                                background-color: white;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: -2px;
+                                right: 5px;
+                                transform: rotate(-25deg);
+                                /*border-top: 1px solid black;
+                                border-right: 1px solid black;*/
+                                z-index: 1;
+                            }
+                            #pupille {
+                                width: 70%;
+                                height: 60%;
+                                background-color: black;
+                                position: absolute;
+                                top: 20%;
+                                border-radius: 50%;
+                                right: 0;
+                            }
+                        #collash {
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            bottom: -1px;
+                            left: -15%; /*-27px;*/
+                            width: 30%;
+                            height: 50%;
+                            /*outline: 1px solid red;*/
+                            justify-content: space-around;
+                        }
+                            .lash {
+                                width: 50%;
+                                height: 1%;
+                                background-color: black;
+                                /*outline: 1px solid yellow;*/
+                                position: relative;
+                                bottom: 0;
+                                right: 0;
+                                border-radius: 0 0 10% 10%;
+                            }
+                    #eye-r {
+                        width: 25vh;
+                        height: 40vh;
+                        background-color: white;
+                        position: relative;
+                        /*top: 25%;
+                        left: 50%;*/
+                        border-radius: 40% 70% 0 0 ;
+                        border: 2px solid black;
+                        /*outline: 1px solid yellow;*/
+                    }
+                        #eyecolor-r {
+                            width: 60%;
+                            height: 80%;
+                            background-color: #24acf2;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            border-radius: 30% 60% 0 0;
+                            border: 1px solid black;
+                        }    
+                            #bubble-r {
+                                width: 50%;
+                                height: 30%;
+                                background-color: white;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: -2px;
+                                left: 5px;
+                                transform: rotate(25deg);
+                                /*border-top: 1px solid black;
+                                border-left: 1px solid black;*/
+                                z-index: 1;
+                            }
+                            #pupille-r {
+                                width: 70%;
+                                height: 60%;
+                                background-color: black;
+                                position: absolute;
+                                top: 20%;
+                                border-radius: 50%;
+                                left: 0;
+                            }
+                        #collash-r {
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            bottom: -1px;
+                            right: -15%; /*-27px;*/
+                            width: 30%;
+                            height: 50%;
+                            /*outline: 1px solid red;*/
+                            justify-content: space-around;
+                        }
+                            .lash-r {
+                                width: 50%;
+                                height: 1%;
+                                background-color: black;
+                                /*outline: 1px solid yellow;*/
+                                position: relative;
+                                bottom: 0;
+                                left: 50%;
+                                border-radius: 0 0 10% 10%;
+                            }
+            /* ZEN'Ô SAMA */
+            #zeno {
+                background-color: #860fcd;
+                height: 100vh;
+            }
+                #zenoface {
+                    background-color: #57c7f9;
+                    width: 50%;
+                    height: 100%;
+                    margin: auto;
+                    position: relative;
+                    border-left: 4px solid black;
+                    border-right: 4px solid black;
+                }
+                    #zenoeye1 {
+                        background-color: white;
+                        border-radius: 50%;
+                        height: 22%;
+                        width: 25%;
+                        position: absolute;
+                        left: -12.5%;
+                        top: 40%;
+                        border: 2px solid black;
+                    }
+                        #zenoeye2 {
+                            background-color: black;
+                            width: 50%;
+                            height: 50%;
+                            border-radius: 50%;
+                            position: relative;
+                            top: 25%;
+                            left: 25%;
+                        }
+                    #zenoeye1-r {
+                        background-color: white;
+                        border-radius: 50%;
+                        height: 22%;
+                        width: 25%;
+                        position: absolute;
+                        right: -12.5%;
+                        top: 40%;
+                        border: 2px solid black;
+                        /*outline: 2px solid green;*/
+                    }
+                    #zenosmile {
+                        width: 25%;
+                        height: 12.5%;
+                        border-radius: 30%;
+                        border-bottom: 2px solid black;
+                        position: absolute;
+                        bottom: 7.5%;
+                        left: 37.5%;
+                    }
+            /* GOLDEN FRIEZA */
+            #frieza {
+                background-color: #d7d473;
+                height: 100vh;
+            }
+                #linef {
+                    display: flex;
+                    position: relative;
+                    top: 30%;
+                    justify-content: space-around;
+                    width: 70%;
+                    margin: auto;
+                }
+                    #eyef {
+                        width: 40vh;
+                        height: 25vh;
+                        background-color: white;
+                        position: relative;
+                        /*top: 25%;
+                        left: 25%;*/
+                        border-radius: 20% 90% 5% 0 ;
+                        border: 2px solid black;
+                        border-left-width: 8px;
+                        border-bottom-width: 8px;
+                        transform: skew(20deg);
+                    }
+                        #pupillef {
+                            width: 20%;
+                            height: 20%;
+                            background-color: #6b1228;
+                            position: absolute;
+                            top: 55%;
+                            border-radius: 50%;
+                            right: 30%;
+                            transform: skew(-20deg);
+                            border: 2px solid black;
+                        }
+                    #eyef-r {
+                        width: 40vh;
+                        height: 15vh;
+                        background-color: white;
+                        position: relative;
+                        align-self: flex-end;
+                        bottom: 10%;
+                        /*left: 25%;*/
+                        border-radius: 90% 20% 0 5% ;
+                        border: 2px solid black;
+                        border-right-width: 6px;
+                        border-bottom-width: 6px;
+                        transform: skew(-20deg);
+                    }
+                        #pupillef-r {
+                            width: 15%;
+                            height: 15%;
+                            background-color: #6b1228;
+                            position: absolute;
+                            top: 50%;
+                            border-radius: 50%;
+                            left: 30%;
+                            transform: skew(10deg);
+                            border: 2px solid black;
+                        }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="logo-section">
+            <div id="logo-img">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/5/57/Dragon_Ball_Super_Logo.png/1199px-Dragon_Ball_Super_Logo.png" alt="Dragon Ball Super Logo"/>
+            </div>
+            <div id="leg1">
+                <img src="https://image.ibb.co/i0qJzf/37160809d8a1883598bb9bf3c64d7c65.png" class="leg" />
+                <!-- https://image.ibb.co/bupgkL/94b2d22f6eb3b6264d7dc1a66dfe9f59.png -->
+            </div>
+            <div id="leg2">
+                <img src="https://image.ibb.co/i0VXs0/158468436f1551e30d70a187b933771c.png" class="leg" />
+            </div>
+        </div>
+    <!---->
+    <!---->    
+        <div id="krilin">
+            <div id="gridk">
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+        </div>
+    <!---->
+    <!---->
+        <div id="bulma">
+            <div id="lineb">
+                <!---->
+                <div id="eye">
+                    <div id="collash">
+                        <div class="lash"></div>
+                        <div class="lash"></div>
+                        <div class="lash"></div>
+                        <div class="lash"></div>
+                        <div class="lash"></div>
+                        <div class="lash"></div>
+                    </div>
+                    <div id="eyecolor">
+                        <div id="bubble"></div>
+                        <div id="pupille"></div>
+                    </div>
+                </div>
+                <!---->
+                <div id="eye-r">
+                    <div id="collash-r">
+                        <div class="lash-r"></div>
+                        <div class="lash-r"></div>
+                        <div class="lash-r"></div>
+                        <div class="lash-r"></div>
+                        <div class="lash-r"></div>
+                        <div class="lash-r"></div>
+                    </div>
+                    <div id="eyecolor-r">
+                        <div id="bubble-r"></div>
+                        <div id="pupille-r"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!---->
+    <!---->
+        <div id="zeno">
+            <div id="zenoface">
+                <div id="zenoeye1">
+                    <div id="zenoeye2"></div>
+                </div>
+                <div id="zenoeye1-r">
+                    <div id="zenoeye2"></div>
+                </div>
+                <div id="zenosmile"></div>
+            </div>
+        </div>
+    <!---->
+    <!---->
+        <div id="frieza">
+            <div id="linef">
+                <div id="eyef">
+                    <div id="pupillef"></div>
+                </div>
+                <div id="eyef-r">
+                    <div id="pupillef-r"></div>
+                </div>
+            </div>
+        </div>
+    <!---->
+    <!---->
+    </body>
+
+</html>

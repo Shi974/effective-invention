@@ -1,0 +1,45 @@
+*
+	{
+		font-family: sans-serif; text-align: center;
+	}
+#top
+	{
+		visibility: hidden;
+	}
+#bloc_page
+	{
+		position: relative; top: 4.5em;
+	}
+nav
+	{
+		position: fixed; top: 0px; left: 0px; width: 100%; line-height: 3.5em;
+		background-color: black; color: white;
+		text-align: center;
+		font-weight: 600; z-index: 15;
+	}
+	nav ul
+		{
+			list-style-type: none;
+		}
+	nav li
+		{
+			display: inline-block;
+		}
+	nav a
+		{
+			color: white; text-decoration: none;
+			height: 2.5em; line-height: 2.5em; padding: 1em 1.25em; 
+		}
+	nav a:hover
+		{
+			background-color: #383838; border-radius: 8px;
+		}
+#first
+	{
+		min-height: 350px; max-height: 400px;
+		background-image: url("https://html5up.net/uploads/demos/miniport/images/pic00.jpg"); background-repeat: no-repeat; background-size: auto;
+	}
+#work
+	{
+		clear: both;
+	}

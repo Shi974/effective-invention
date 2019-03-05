@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Photograph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>        
+    html, body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, #000 50%, #fff 50%);
+        overflow: hidden;
+    }
+
+    div {
+        /* this height and width values are specific to this example */
+        width: 100vw;
+        height: 50vw;
+        /* center the div vertically and horizontally to make it look nicer */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: slidePink2 10s infinite linear;
+        background: #FF1EAD;
+    }
+
+    @keyframes slidePink2 {
+        0% { 
+        box-shadow: inset 0 -14vw 0 0 white,
+        inset 50vmin 50vmin 15vmin 15vmax black;  
+        }
+        100% { 
+        box-shadow: inset 0 -14vw 0 0 white,
+        inset -75vmin -75vmin 25vmin 15vmax black; 
+        }
+    }
+
+    div::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* original source: http://www.batsinaustin.com/wp-content/uploads/2016/05/austin-bats-3.png */
+        background: url("https://www.rvcj.com/wp-content/uploads/2015/07/155-859x483.jpg");
+        background-position: top left;
+        background-size: 100% 100%;
+        filter: saturate(0) contrast(400%) invert(1);
+        mix-blend-mode: multiply
+    }
+    </style>
+</head>
+<body>
+    <div id="photograph"><div>
+</body>
+</html>

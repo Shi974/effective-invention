@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blob</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+        
+        .blob {
+            background: linear-gradient(35deg, yellow, red);
+            animation: transform 20s ease-in-out infinite both alternate, 
+            movement 12s ease-in-out infinite both, shade 30s linear infinite both;
+        }
+
+        .bip {
+            width: 225px;
+            height: 275px;
+            border-radius: 70% 30% 25% 70% / 60% 46% 65% 32%;
+        }
+
+        .bop {
+            width: 300px;
+            height: 200px;
+            border-radius: 20% 60% 42% 68% / 50% 66% 25% 32%;
+        }
+
+        .bup {
+            width: 275px;
+            height: 350px;
+            border-radius: 90% 70% /22% 58% / 10% 66% 55% 62%;
+        }
+
+        #blob1 {
+            position: absolute;
+            top: 25%;
+            left: 2%;
+        }
+
+        #blob2 {
+            position: absolute;
+            top: 67%;
+            left: 59%;
+        }
+
+        #blob3 {
+            position: absolute;
+            top: 7%;
+            left: 89%;
+        }
+
+        #blob4 {
+            position: absolute;
+            top: 56%;
+            left: 42%;
+        }
+
+        #blob5 {
+            position: absolute;
+            top: 16%;
+            left: 22%;
+        }
+
+        #blob6 {
+            position: absolute;
+            top: 6%;
+            left: 52%;
+        }
+
+        #blob7 {
+            position: absolute;
+            top: 56%;
+            left: 2%;
+        }
+
+        @keyframes transform {
+            0%, 100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+            14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+            28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+            42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+            56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+            70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+            84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+        }
+
+        @keyframes movement {
+            0%, 100% { transform: none; }
+            50% { transform: translateY(30%) rotateY(10deg); }
+        }
+
+        @keyframes shade {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="blob bip" id="blob1"></div>
+    <div class="blob bop" id="blob2"></div>
+    <div class="blob bip" id="blob3"></div>
+    <div class="blob bup" id="blob4"></div>
+    <div class="blob bop" id="blob5"></div>
+    <div class="blob bup" id="blob6"></div>
+    <div class="blob bip" id="blob7"></div>
+</body>
+</html>

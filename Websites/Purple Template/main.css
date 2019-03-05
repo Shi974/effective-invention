@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700');
+
+body {
+    background: linear-gradient(#632C65, #4B384C);
+}
+
+.bloc {
+    height: 100vh;
+    width: 100%;
+}
+
+.home {
+    background-color: #632C65;
+}
+
+.about {
+    background-color: #4B384C;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    font-family: "Kalam", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+a {
+    color: #E2A9E5;
+    font-style: italic;
+}
+
+    li a:hover {
+        animation: hoverColorMe2 0.7s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes hoverColorMe2 {
+        100% {
+            font-weight: 700;
+            font-style: italic;
+            text-shadow: 2px 2px #E2A9E5;
+            color: #FFF;
+            border-bottom: 1px solid #E2A9E5;
+        }
+    }
+
+h1 {
+    color: #E2A9E5;
+    font-family: "Kalam", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #E2A9E5;
+    font-family: "Kalam", sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    
+}
+
+article {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.boutons {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.button {
+    font-family: "Kalam", sans-serif;
+    font-weight: 400;
+    border: 1px solid white;
+    font-size: 1.5em;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    animation: hoverColorMe 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hoverColorMe {
+    100% {
+        border: 2px solid #4B384C;
+        background-color: #E2A9E5;
+        color: #632C65;
+        font-weight: 700;
+        font-style: italic;
+        text-shadow: 2px 2px 2px #FFF;
+    }
+}
+
+#arrow {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+i {
+    color: #E2A9E5;
+    font-size: 5em;
+    text-align: center;
+}
+
+    i:hover {
+        animation: hoverColorMe3 0.7s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes hoverColorMe3 {
+        100% {
+            text-shadow: 3px 3px #FFF /*632C65*/;
+            color: #E2A9E5;
+        }
+    }
+
+.down {
+    animation: floatd 3s infinite;
+}
+
+.up {
+    animation: floatu 3s infinite;
+}
+
+@keyframes floatd {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatu {
+    0% {
+        transform: translatey(20px);
+    }
+    50% {
+        transform: translatey(0);
+    }
+    100% {
+        transform: translatey(20px);
+    }
+}
+
+h3 {
+    color: #E2A9E5;
+    font-family: "Kalam", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    width: 90%;
+    margin: auto;
+    text-shadow: 3px 3px #632C65;
+}
+
+#text {
+    width: 90%;
+    color: #FFF;
+    font-family: "Kalam", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: auto;
+    padding-top: 15px;
+    text-shadow: 3px 3px #632C65;
+}
+
+@media all and (max-height: 1024px) {
+    body {
+        display: flex;
+    }
+	.bloc {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        display: flex;
+    }
+	.bloc {
+        height: auto;
+        width: auto;
+    }
+}

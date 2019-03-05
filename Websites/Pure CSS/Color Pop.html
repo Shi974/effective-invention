@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Color Pop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+        #main {
+            background-color: #FFF;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Luckiest Guy", sans-serif;
+            font-size: 300%;
+        }
+
+        .grid-container {
+            width: 80%;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: ". ." ". .";
+            /*border: 2px solid black;*/
+            animation: anim2 4s infinite;
+            animation: swing 4s ease;
+        }
+
+        .pop {
+            /*border: 2px solid black;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .un, .quatre {
+            color: #FF1EAD;
+            animation: anim1 4s infinite;
+        }
+
+        .deux, .trois {
+            color: #000;
+            animation: anim3 4s infinite;
+        }
+
+        .s1 {
+            animation: anim4 4s infinite;
+        }
+
+        .s2 {
+            animation: anim3 4s infinite;
+        }
+
+        @keyframes anim1 {
+                    50% {
+                        background-color: #000;
+                        color: #FFF;
+                        text-shadow: 4px 4px 4px #FF1EAD;
+                        border-radius: 50%;
+                    }
+                }
+
+        @keyframes anim2 {
+            50% {
+                color: #FFF;
+                text-shadow: 4px 4px 4px #FF1EAD;
+            }
+        }
+
+        @keyframes anim3 {
+            50% {
+                color: #FF1EAD;
+                text-shadow: 4px 4px 4px #000;
+                transform: rotateZ(-30deg);
+            }
+        }
+
+        @keyframes anim4 {
+            50% {
+                transform: rotateZ(45deg);
+            }
+        }
+
+        @keyframes swing {
+            15%
+            {
+                transform: translateX(5px);
+            }
+            30%
+            {
+                transform: translateX(-5px);
+            }
+            50%
+            {
+                transform: translateX(3px);
+            }
+            65%
+            {
+                transform: translateX(-3px);
+            }
+            80%
+            {
+                transform: translateX(2px);
+            }
+            100%
+            {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="grid-container swing">
+            <div class="pop un"><span class="s1">POP</span></div>
+            <div class="pop deux"><span class="s2">POP</span></div>
+            <div class="pop trois"><span class="s2">COLOR</span></div>
+            <div class="pop quatre"><span class="s1">COLOR</span></div>
+        </div>
+    </div>
+</body>
+</html>

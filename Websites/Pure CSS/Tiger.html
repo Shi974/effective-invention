@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tiger PureCSS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <!--CSS-->
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Ranga');
+            #container {
+                background-color: lightblue;
+                height: 100vh;
+            }
+
+            #tiger {
+                width: 50vh;
+                height: 50vh;
+                margin: auto;
+                position: relative;
+                top: 25%;
+                /*outline: 1px solid red;*/
+            }
+
+            #head {
+                width: 60%;
+                height: 50%;
+                /*outline: 1px solid yellow;*/
+                border-radius: 50%;
+                border: 2px solid black;
+                margin: auto;
+                background-color: #fca440;
+                position: relative;
+                z-index: 5;
+            }
+
+            #line-eye {
+                display: flex;
+                position: absolute;
+                top: 35%;
+                left: 14%;
+                justify-content: space-around;
+                width: 70%;
+                /*margin: auto;*/
+                z-index: 5;
+            }
+
+            #eye {
+                width: 15%;
+                height: 35px;
+                border-bottom: 2px solid black;
+                border-radius: 50% 50% 90% 90%;
+                /*outline: 1px solid green;
+                position: relative;
+                top: 50%;
+                left: 20%;*/
+            }
+
+            #eye-r {
+                height: 35px;
+                width: 15%;
+                border-bottom: 2px solid black;
+                border-radius: 100%;
+                /*outline: 1px solid green;
+                position: relative;
+                top: 40%;
+                left: 70%;*/
+            }
+
+            #line-cheek {
+                display: flex;
+                position: absolute;
+                top: 57%;
+                left: 10%;
+                justify-content: space-between;
+                width: 80%;
+                margin: auto;
+                z-index: 4;
+            }
+
+            #cheek {
+                width: 15%;
+                height: 17px;
+                background-color: pink;
+                border-radius: 50%;
+                /*outline: 1px solid blue;*/
+                transform: rotate(-10deg);
+            }
+
+            #cheek-r {
+                width: 15%;
+                height: 17px;
+                background-color: pink;
+                border-radius: 50%;
+                /*outline: 1px solid blue;*/
+                transform: rotate(10deg);
+            }
+
+            #face {
+                width: 45%;
+                height: 35%;
+                margin: auto;
+                background-color: #fbedd2;
+                border-radius: 55% 50% 50% 45%;
+                position: absolute;
+                bottom: 1%;
+                left: 28%;
+                z-index: 1;
+            }
+
+            #nose {
+                width: 45%;
+                height: 35%;
+                margin: auto;
+                background-color: black;
+                border-radius: 55% 50% 50% 45%;
+                position: relative;
+                top: 0;
+            }
+
+            #mouth {
+                height: 20%;
+                width: 25%;
+                /*18%*/
+                border-bottom: 2px solid black;
+                border-radius: 100%;
+                position: absolute;
+                bottom: 15%;
+                left: 38%;
+                /*margin: auto;*/
+            }
+
+            #ear {
+                position: absolute;
+                width: 25%;
+                height: 25%;
+                left: -10%;
+                top: 5%;
+                background: #fca440;
+                border-radius: 50%;
+                z-index: 1;
+                transform: rotate(-55deg);
+                border-top: 2px solid black;
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                border-bottom-color: #fca440;
+                animation: ears1 5s 0.2s ease-in-out infinite;
+            }
+
+            #ear-r {
+                position: absolute;
+                width: 25%;
+                height: 25%;
+                right: -10%;
+                top: 5%;
+                background: #fca440;
+                border-radius: 50%;
+                z-index: 1;
+                transform: rotate(55deg);
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+                border-left: 2px solid black;
+                border-bottom-color: #fca440;
+                animation: ears2 5s 1s ease-in-out infinite;
+            }
+
+            .inner-ear {
+                position: absolute;
+                border-radius: 50% 50% 0 0;
+                width: 50%;
+                height: 40%;
+                top: 25%;
+                left: 25%;
+                background: #fbedd2;
+            }
+
+            @keyframes ears1 {
+                0%, 80%, 100% {
+                    top: 0px;
+                    left: 0px;
+                    transform: rotate(-30deg);
+                }
+                90% {
+                    top: 10px;
+                    left: -5px;
+                    transform: rotate(-40deg);
+                }
+            }
+
+            @keyframes ears2 {
+
+                0%, 80%, 100% {
+                    top: 0px;
+                    right: 0px;
+                    transform: rotate(30deg);
+                }
+                90% {
+                    top: 10px;
+                    right: -5px;
+                    transform: rotate(40deg);
+                }
+            }
+
+            #head #stripes {
+                width: 15%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                /*outline: 1px solid green;*/
+                position: absolute;
+                top: 35%;
+                left: 0;
+                z-index: 5;
+            }
+
+            .stripe {
+                background: black;
+                height: 5%;
+                width: 50%;
+                border-radius: 0 0 100% 0;
+            }
+
+            .stripe:first-child {
+                width: 25%;
+            }
+
+            #head .stripe:last-child {
+                width: 80%;
+                /*position: absolute;
+                                left: 5%;
+                                outline: 1px solid red;*/
+                align-self: flex-end;
+            }
+
+            #head #stripes-r {
+                width: 15%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-end;
+                /*outline: 1px solid green;*/
+                position: absolute;
+                top: 35%;
+                right: 0;
+                z-index: 5;
+            }
+
+            #head .stripe-r {
+                background: black;
+                height: 5%;
+                width: 50%;
+                border-radius: 0 0 0 100%;
+            }
+
+            #head .stripe-r:first-child {
+                width: 25%;
+            }
+
+            #head .stripe-r:last-child {
+                width: 80%;
+                align-self: flex-start;
+            }
+
+            #body {
+                width: 40%;
+                height: 50%;
+                /*outline: 1px solid yellow;*/
+                border-radius: 40% 40% 20% 20%;
+                border: 2px solid black;
+                margin: auto;
+                background-color: #fca440;
+                position: relative;
+                z-index: 3;
+                bottom: 5%;
+            }
+
+            #tie:before, #tie:after {
+                content: "";
+                outline: 1px solid grey;
+                width: 20%;
+                height: 40%;
+                z-index: 2;
+                position: absolute;
+                left: 40%;
+                background: lightblue;
+            }
+                #tie:after {
+                    width: 13%;
+                    height: 11%;
+                    /*outline: 1px solid yellow;*/
+                    top: 35%;
+                    left: 43.25%;
+                    transform: rotate(45deg);
+                }
+
+            #belly {
+                width: 55%;
+                height: 65%;
+                margin: auto;
+                background-color: #fbedd2;
+                border-radius: 55% 50% 50% 45%;
+                position: absolute;
+                bottom: 1px;
+                left: 22.5%;
+            }
+
+            #paw1 {
+                width: 50%;
+                height: 25%;
+                /*margin: auto;*/
+                background-color: #fbedd2;
+                border-radius: 55% 50% 50% 45%;
+                position: absolute;
+                bottom: -10%;
+                left: -2%;
+                border: 2px solid black;
+            }
+
+            #paw1-r {
+                width: 50%;
+                height: 25%;
+                /*margin: auto;*/
+                background-color: #fbedd2;
+                border-radius: 55% 50% 50% 45%;
+                position: absolute;
+                bottom: -10%;
+                right: -2%;
+                border: 2px solid black;
+            }
+
+            #body #stripes {
+                width: 25%;
+                height: 40%;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                align-items: flex-start;
+                /*outline: 1px solid green;*/
+                position: absolute;
+                top: 35%;
+                left: 0;
+                z-index: 5;
+            }
+
+            #body .stripe {
+                background: black;
+                height: 5%;
+                width: 50%;
+                border-radius: 0 0 100% 0;
+            }
+
+            #body .stripe:first-child {
+                width: 25%;
+            }
+
+            #body .stripe:last-child {
+                width: 80%;
+                align-self: flex-start;
+            }
+
+            #body #stripes-r {
+                width: 25%;
+                height: 40%;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                align-items: flex-end;
+                /*outline: 1px solid green;*/
+                position: absolute;
+                top: 35%;
+                right: 0;
+                z-index: 5;
+            }
+
+            #body .stripe-r {
+                background: black;
+                height: 5%;
+                width: 50%;
+                border-radius: 0 0 0 100%;
+            }
+
+            #body .stripe-r:first-child {
+                width: 25%;
+            }
+
+            #body .stripe-r:last-child {
+                width: 80%;
+                align-self: flex-end;
+            }
+
+            #leg {
+                width: 15%;
+                height: 30%;
+                /*outline: 1px solid red;*/
+                border-radius: 40% 40% 20% 20%;
+                border: 2px solid black;
+                background-color: #fca440;
+                position: absolute;
+                z-index: 2;
+                bottom: 5%;
+                left: 20%;
+                /*justify-self: flex-start;*/
+            }
+
+            #paw2 {
+                width: 90%;
+                height: 25%;
+                /*margin: auto;*/
+                background-color: #fbedd2;
+                border-radius: 55% 50% 50% 45%;
+                position: absolute;
+                bottom: -10%;
+                left: -15%;
+                border: 2px solid black;
+            }
+
+            #leg #stripes {
+                width: 45%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                /*outline: 1px solid green;*/
+                position: absolute;
+                top: 35%;
+                left: 0;
+                z-index: 5;
+            }
+
+            #leg .stripe {
+                background: black;
+                height: 5%;
+                width: 100%;
+                border-radius: 0 0 100% 0;
+            }
+
+            #leg .stripe:first-child {
+                width: 35%;
+            }
+
+            #leg .stripe:last-child {
+                width: 80%;
+                height: 8%;
+                align-self: flex-start;
+            }
+
+            #leg-r {
+                width: 15%;
+                height: 30%;
+                /*outline: 1px solid red;*/
+                border-radius: 40% 40% 20% 20%;
+                border: 2px solid black;
+                background-color: #fca440;
+                position: absolute;
+                /*z-index: -20;*/
+                bottom: 5%;
+                right: 20%;
+            }
+
+            #paw2-r {
+                width: 90%;
+                height: 25%;
+                /*margin: auto;*/
+                background-color: #fbedd2;
+                border-radius: 55% 50% 50% 45%;
+                position: absolute;
+                bottom: -10%;
+                right: -15%;
+                border: 2px solid black;
+            }
+
+            #leg-r #stripes-r {
+                width: 45%;
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-end;
+                /*outline: 1px solid green;*/
+                position: absolute;
+                top: 35%;
+                right: 0;
+                z-index: 5;
+            }
+
+            #leg-r .stripe-r {
+                background: black;
+                height: 5%;
+                width: 100%;
+                border-radius: 0 0 0 100%;
+            }
+
+            #leg-r .stripe-r:first-child {
+                width: 35%;
+            }
+
+            #leg-r .stripe-r:last-child {
+                width: 80%;
+                height: 8%;
+                align-self: flex-end;
+            }
+
+            #tail {
+                width: 5%;
+                height: 40%;
+                position: absolute;
+                border-radius: 20%;
+                background: repeating-linear-gradient(25deg, #fca440, #fca440 8px, black 6px, black 10px);
+                /*linear-gradient(#fca440, black, #fca440, black, #fca440, black, #fca440);*/
+                border: 2px solid black;
+                bottom: 5%;
+                transform: rotate(-20deg);
+                left: 18.5%;
+                animation: tail 3s infinite;
+            }
+
+            @keyframes tail {
+                25% {
+                    transform: rotate(-20deg);
+                }
+
+                50% {
+                    transform: rotate(-5deg);
+                }
+
+                100% {
+                    transform: rotate(-20deg);
+                }
+            }
+
+            #msg {
+                font-family: "Ranga", sans-serif;
+                width: 99%;
+                height: 10%;
+                margin: auto;
+                position: absolute;
+                bottom: -8%;
+                /*left: 05%;*/
+                font-size: 2.5em;
+                text-align: center;
+                /*outline: 1px solid yellow;*/
+                animation: fade 3s infinite;
+            }
+
+            @keyframes fade {
+                0% {
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 0.5;
+                }
+                50% {
+                    opacity: 1;
+                }
+                75% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+
+        </style>
+        <!--CSS-->
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="tiger">
+                <div id="head">
+                    <div id="line-eye">
+                        <div id="eye"></div>
+                        <div id="eye-r"></div>
+                    </div>
+                    <div id="line-cheek">
+                        <div id="cheek"></div>
+                        <div id="cheek-r"></div>
+                    </div>
+                    <div id="face">
+                        <div id="nose"></div>
+                        <div id="mouth"></div>
+                    </div>
+                    <div id="ear">
+                        <div class=inner-ear></div>
+                    </div>
+                    <div id="ear-r">
+                        <div class=inner-ear></div>
+                    </div>
+                    <div id="stripes">
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                    </div>
+                    <div id="stripes-r">
+                        <div class="stripe-r"></div>
+                        <div class="stripe-r"></div>
+                        <div class="stripe-r"></div>
+                    </div>
+                </div>
+                <div id="body">
+                    <div id="tie"></div>
+                    <div id="belly"></div>
+                    <div id="stripes">
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                    </div>
+                    <div id="stripes-r">
+                        <div class="stripe-r"></div>
+                        <div class="stripe-r"></div>
+                        <div class="stripe-r"></div>
+                    </div>
+                    <div id="paw1"></div>
+                    <div id="paw1-r"></div>
+
+                </div>
+                <div id="leg">
+                    <div id="stripes">
+                        <div class="stripe"></div>
+                        <div class="stripe"></div>
+                    </div>
+                    <div id="paw2"></div>
+                </div>
+                <div id="tail"></div>
+                <div id="leg-r">
+                    <div id="stripes-r">
+                        <div class="stripe-r"></div>
+                        <div class="stripe-r"></div>
+                    </div>
+                    <div id="paw2-r"></div>
+                </div>
+                <div id="msg"><p>Look! A Tie-ger!</p></div>
+            </div>
+        </div>
+    </body>
+
+</html>
