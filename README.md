@@ -4,16 +4,17 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
 
 # Websites perso
 
-  - Annie's World
-  - Mon CV en ligne
+  - [Mon Portfolio](https://shi974.github.io/)
+  - [Annie's World](https://github.com/Shi974/effective-invention/tree/master/Websites/Annie's%20World)
+  - [Mon CV en ligne](https://github.com/Shi974/effective-invention/tree/master/Websites/Mon%20CV)
   - Ma galerie de pages html en PURE CSS
 
 
 # Websites - templates
   - Purple Template
   - Create Pro
-  - Landing Page (réalisé avec le framework Bulma)
-  - illdy (réalisé en SASS)
+  - [Landing Page (réalisé avec le framework Bulma)](https://github.com/Shi974/LandingPage)
+  - [illdy (réalisé en SASS)](https://github.com/Shi974/illdy)
   - BIO (en cours de réalisation)
 
 # JavaScript
