@@ -24,6 +24,7 @@ Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusiveme
  - Devinette
  - [Shifumi](https://github.com/Shi974/shifumi)
  - Kasbrik
+ - Dice On!
 
 # N'hésitez pas à me contacter pour plus d'infos
 
