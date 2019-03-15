@@ -12,7 +12,7 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
 
 # Websites - templates
   - Purple Template
-  - Tri Sélectif
+  - [Tri Sélectif](https://github.com/Shi974/Tri-Selectif)
   - Create Pro
   - [Landing Page (réalisé avec le framework Bulma)](https://github.com/Shi974/LandingPage)
   - [illdy (réalisé en SASS)](https://github.com/Shi974/illdy)
@@ -24,7 +24,7 @@ Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusiveme
 
  - Devinette
  - [Shifumi](https://github.com/Shi974/shifumi)
- - To Do List (réalisé avec Vue.js)
+ - [To Do List](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
  - Kasbrik
  - Dice On!
 
