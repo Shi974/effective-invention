@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        #app {
+            font-size: 1.3em;
+            width: 100%;
+        }
+        input, button {
+            font-size: 1em;
+        }
+        li {
+            border-bottom: 2px solid rgba(153, 151, 151, 0.5);
+            margin-left: 20px;
+        }
+        li>button {
+            font-size: 0.5em;
+            border: none !important;
+        }
+        .close {
+            color: #ff3860;
+        }
+
+        .completed {
+            color: rgba(128, 128, 128, 0.637);
+            border-bottom-color: rgba(153, 151, 151, 0.1);
+        }
+        .completed span {
+            text-decoration:line-through;
+        }
+
+        .modif {
+            color: hsl(204, 86%, 53%);
+        }
+
+        /* PURE CSS CLOCK */
+        .clock {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background: white;
+            box-sizing: border-box;
+            border-radius: 100%;
+            border: 10px solid hsl(204, 86%, 53%)/*#67D2C8*/;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .top {
+            position: absolute;
+            width: 3px;
+            height: 8px;
+            background: #262626;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        .right {
+            position: absolute;
+            width: 8px;
+            height: 3px;
+            background: #262626;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto 0;
+        }
+        .bottom {
+            position: absolute;
+            width: 3px;
+            height: 8px;
+            background: #262626;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+        }
+        .left {
+            position: absolute;
+            width: 8px;
+            height: 3px;
+            background: #262626;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto 0;
+        }
+        .center {
+            height: 6px;
+            width: 6px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: #262626;
+            border-radius: 100%;
+        }
+        .hour {
+            width: 3px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            animation: time 60s infinite linear;
+        }
+        .hour:before {
+            position: absolute;
+            content: "";
+            background: #262626;
+            height: 60px;
+            width: 3px;
+            top: 30px;
+        }
+        .minute {
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            animation: time 30s infinite linear;
+        }
+        .minute:before {
+            position: absolute;
+            content: "";
+            background: #262626;
+            height: 40px;
+            width: 1px;
+            top: 50px;
+        }
+        .second {
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            animation: time 15s infinite linear;
+        }
+        .second:before {
+            position: absolute;
+            content: "";
+            background: #ff3860;
+            height: 45px;
+            width: 2px;
+            top: 45px;
+        }
+
+        @keyframes time {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HERO -->
+    <section class="hero is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    To Do List
+                </h1>
+                <h2 class="subtitle">
+                    <i class="fas fa-clipboard-list"></i> Les choses que tu dois faire mais que tu ne fais jamais
+                </h2>
+                <!-- PURE CSS CLOCK -->
+                <div class="clock">
+                    <div class="top"></div>
+                    <div class="right"></div>
+                    <div class="bottom"></div>
+                    <div class="left"></div>
+                    <div class="center"></div>
+                    <div class="hour"></div>
+                    <div class="minute"></div>
+                    <div class="second"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <section class="section">
+        <div class="container">
+            <div id="app">
+                <div>
+                    <i class="fas fa-pencil-alt"></i> <input v-model="element" placeholder="Nouvelle tâche"
+                        @keyup.enter="addTodo(element)">
+                    <button @click="addTodo(element)" class="button is-primary">Ajouter un item</button>
+                </div>
+                <hr>
+                <ol>
+                    <li v-for="todo in todos" :class="{completed: todo.completed}">
+                        <label class="checkbox">
+                            <input type="checkbox" v-model="todo.completed">
+                            <span>{{ todo.text }}</span>
+                        </label>
+                        <button class="button is-normal" @click="todo.edit = true"><i class="fas fa-pencil-alt modif"></i></button>
+                        <input v-show="todo.edit == true" v-model="todo.text" @keyup.enter="todo.edit=false; $emit('update')">
+                        <button class="button is-normal" @click="removeTodo(todo)"><i class="fas fa-times close"></i></button>
+                    </li>
+                </ol>
+                <hr>
+                <div id="total" class="button is-danger">
+                    <strong>{{ count }} tâches à faire</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="main.js"></script>
+</body>
+
+</html>
