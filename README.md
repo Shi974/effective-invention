@@ -5,14 +5,14 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
 # Websites perso
 
   - [Mon Portfolio](https://shi974.github.io/)
-  - [Annie's World](https://github.com/Shi974/effective-invention/tree/master/Websites/Annie's%20World)
-  - [Mon CV en ligne](https://github.com/Shi974/effective-invention/tree/master/Websites/Mon%20CV)
+  - [Annie's World](http://annie.atspace.eu/)
+  - Mon CV en ligne
   - Ma galerie de pages html en PURE CSS
 
 
 # Websites - templates
-  - Purple Template
   - [Tri Sélectif](https://github.com/Shi974/Tri-Selectif)
+  - Purple Template
   - Create Pro
   - [Landing Page (réalisé avec le framework Bulma)](https://github.com/Shi974/LandingPage)
   - [illdy (réalisé en SASS)](https://github.com/Shi974/illdy)
@@ -22,15 +22,18 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
 
 Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusivement axés sur du JS.
 
- - Devinette
+ - [ChatBox](https://github.com/Shi974/chatbox) (réalisé avec Vue.js)
  - [Shifumi](https://github.com/Shi974/shifumi)
  - [To Do List](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
  - Kasbrik
  - Dice On!
+ - Jeu de devinette
 
 # N'hésitez pas à me contacter pour plus d'infos
 
-> mail
-> website
-> tel
-> item 4
+- Par mail : 
+> terrentroy.anne@gmail.com
+
+- Via les réseaux sociaux :
+> LinkedIn : @annegaellet
+> CodePen : @Shi974

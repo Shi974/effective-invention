@@ -1,0 +1,237 @@
+/* PALETTE
+1. Bleu vert #a8e6cf
+2. Saumon #ffd3b6 
+3. Menthe à l'eau #dcedc1
+4. Rose Bonbon #ffaaa5 */
+
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700|Staatliches');
+
+/* GENERAL */
+body {
+    font-family: "Kalam", sans-serif;
+    font-size: 1em;
+}
+
+.bloc {
+    height: 100vh !important;
+}
+
+.arrow {
+    font-size: 2em;
+    position: relative;
+    bottom: 5%;
+    color: black !important;
+}
+
+.float {
+    animation: float 3s infinite !important;
+}
+
+h3 {
+    color: black !important;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: black;
+}
+
+strong {
+    color: #ff3860;
+    font-size: 1.2em;
+}
+
+.link {
+    color: #1d2a35 !important;
+}
+
+/* SECTIONS */
+nav a {
+    font-size: 1.5em;
+}
+
+nav span {
+    font-size: 1.3em;
+}
+
+.hero-body {
+    padding-bottom: 0 !important;
+}
+
+.hero .arrow {
+    color: white !important;
+}
+
+.hero h3 {
+    color: white !important;
+    margin-top: 4vh !important;
+}
+
+#about {
+    background-color: #a8e6cf;
+    color: black;
+}
+
+#about a {
+    color: black !important;
+}
+
+#about img {
+    height: 30vh;
+    box-shadow: 2px 2px 2px gray;
+}
+
+#ar_ab {
+    margin-top: 30vh !important;
+}
+
+#comp {
+    background-color: #ffd3b6;
+    color: black;
+}
+
+.competences {
+    font-size: 1.2em;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
+
+#download {
+    color: white !important;
+}
+
+#ar_cp {
+    margin-top: 25vh !important;
+}
+
+#portfolio {
+    background-color: #dcedc1;
+}
+
+#portfolio .fa-github {
+    padding-left: 5px;
+}
+
+#ar_pf {
+margin-top: 7vh;
+}
+
+#contact {
+    background-color: #ffaaa5;
+    position: relative;
+    padding-bottom: 5%;
+}
+
+#contact hr {
+    margin-bottom: 10vh;
+}
+
+#contact h4 {
+    margin-top: 20vh;
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.iconesociale {
+    font-size: 1.4em;
+    margin: 8px;
+}
+
+#mail {
+    margin-right: 5px;
+}
+
+footer {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin-top: 20vh;
+    color: black;
+}
+
+footer .button {
+    margin-top: 5px;
+}
+
+#up {
+    margin-left: 5px;
+}
+
+/* ANIMATIONS */
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+/* RESPONSIVE */
+@media all and (min-width: 1024px) {
+    .hero-body {
+        padding-top: 13rem !important;
+    }
+
+    #about .columns {
+        padding-top: 15vh;
+    }
+
+    #text {
+        width: 50vw;
+        font-size: 1.2em;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    nav {
+        font-size: 0.8em;
+    }
+
+    .hero-body {
+        padding-top: 10rem !important;
+    }
+
+    #about img {
+        height: 30vw;
+    }
+
+    #text {
+        font-size: 1.1em;
+        text-align: left;
+    }
+
+    .is-one-third {
+        flex-direction: row !important;
+    }
+
+    #ar_ab {
+        margin-top: 17vh !important;
+    }
+
+    .competences {
+        font-size: 1.1em;
+    }
+
+    #portfolio .columns {
+        padding-top: 5vh;
+    }
+
+    #portfolio img {
+        width: auto;
+        max-width: 150px;
+    }
+
+    #ar_pf {
+        margin-top: 22vh;
+        }
+}
