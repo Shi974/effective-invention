@@ -36,4 +36,9 @@ Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusiveme
 
 - Via les réseaux sociaux :
 > LinkedIn : @annegaellet
-> CodePen : @Shi974
+
+# Liens utiles
+> Pssst ! Par ici !
+
+- [shi974.github.io](http://shi974.github.io)
+- [CodePen](https://codepen.io/shi974/)
