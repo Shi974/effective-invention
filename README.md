@@ -22,9 +22,9 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
 
 Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusivement axés sur du JS.
 
+ - [To Do List](https://todo-list974.firebaseapp.com/) - [Code](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
  - [ChatBox](https://github.com/Shi974/chatbox) (réalisé avec Vue.js)
  - [Shifumi](https://github.com/Shi974/shifumi)
- - [To Do List](https://todo-list974.firebaseapp.com/) - [Code](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
  - Kasbrik
  - Dice On!
  - Jeu de devinette
