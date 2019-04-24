@@ -193,6 +193,10 @@ footer .button {
 }
 
 @media all and (max-width: 1024px) {
+    .arrow {
+        display: none;
+    }
+
     nav {
         font-size: 0.8em;
     }
@@ -234,4 +238,24 @@ footer .button {
     #ar_pf {
         margin-top: 22vh;
         }
+}
+
+@media all and (max-width: 670px) {
+    .hero-body {
+        padding-top: 20px !important;
+        margin-top: 0 !important;
+    }
+
+    #text {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #contact h4 {
+        margin-top: 0;
+    }
+
+    footer {
+        margin-top: 15vh !important;
+    }
 }
