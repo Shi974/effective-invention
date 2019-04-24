@@ -24,7 +24,7 @@ Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusiveme
 
  - [ChatBox](https://github.com/Shi974/chatbox) (réalisé avec Vue.js)
  - [Shifumi](https://github.com/Shi974/shifumi)
- - [To Do List](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
+ - [To Do List](https://todo-list974.firebaseapp.com/) - [Code](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
  - Kasbrik
  - Dice On!
  - Jeu de devinette
