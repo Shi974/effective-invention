@@ -35,7 +35,7 @@ Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusiveme
 > terrentroy.anne@gmail.com
 
 - Via les réseaux sociaux :
-> LinkedIn : @annegaellet
+> LinkedIn : (@annegaellet)[https://www.linkedin.com/in/annegaellet/]
 
 # Liens utiles
 > Pssst ! Par ici !
