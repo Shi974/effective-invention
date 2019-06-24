@@ -96,6 +96,34 @@ nav span {
     margin-bottom: 5vh;
 }
 
+.html {
+    color: #e44d26;
+}
+
+.css {
+    color: #1799ea;
+}
+
+.js {
+    color: yellow; /* #ecda1a */
+}
+
+.php {
+    color: #848db9;
+}
+
+.docker {
+    color: #0997e5;
+}
+
+.magic {
+    color: purple;
+}
+
+.crop {
+    color: green;
+}
+
 #download {
     color: white !important;
 }
