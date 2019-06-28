@@ -8,7 +8,7 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
   - [Participation à la WebCup 2019](http://humans-united.herokuapp.com)
   - [GDK - 350ms Klub - Projet de groupe](http://gdk-350ms.herokuapp.com)
   - [Annie's World](http://annie.atspace.eu/)
-  - Mon CV en ligne
+  - [Mon CV en ligne](http://annie.alwaysdata.net/)
   - Ma galerie de pages html en PURE CSS
 
 
