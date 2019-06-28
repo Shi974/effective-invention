@@ -1,62 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Annie France</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anne-Gaëlle - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
+
 <body>
-	<div id="wrapper">
-		<div id="borderleft"></div>
-		<div id="corps">
-			<header>
-				<div id="profil"><a href="ressources/profil.png" target="_blank"><img src="ressources/profil.png" alt="Annie France" title="Annie France" class="img" width="15%"/></a></div>
-				<h1>Annie France</h1>
-				<div class="quote"><q>C'est en pratiquant que l'on apprend le mieux!</q></div>
-			</header>
+    <!-- HERO -->
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Anne-Gaëlle
+                </h1>
+                <h2 class="subtitle is-1">
+                    Développeuse Web
+                </h2>
+            </div>
+        </div>
+    </section>
 
-			<article id="cv">
-				<div id="exp">
-					<h2><i class="fas fa-cogs"></i> Mon expérience</h2>
-					<ul>
-						<li><strong>Janvier 2017 - Août 2018</strong> : CDD chez <em>Education Nationale</em></li>
-						<li><strong>Septembre 2015 - Décembre 2016</strong> : Stagiaire chez <em>XYZ</em></li>
-						<li><strong>Mon enfance</strong> : bercée par l'informatique (<em>Win 98 FTW</em>) et les Jeux Vidéo :]</li>
-					</ul>
-				</div>
-				<div id="comp">
-					<h2><i class="fas fa-laptop-code"></i> Mes compétences</h2>
-						<ul>
-							<li>HTML 5</li>
-							<li>CSS 3</li>
-							<li>Un soupçon de JavaScript</li>
-							<li>Recherches sur <a href="https://www.google.com/" target="_blank" title="plouf">Google</a> :p</li>
-						</ul>
-				</div>
-				<div id="formation">
-					<h2><i class="fas fa-book"></i> Ma formation</h2>
-						<ul>
-							<li><strong>2013</strong> : obtention de la Licence <em>mention bien</em></li>
-							<li><strong>2015</strong> : obtention du Master <em>mention assez bien</em></li>
-							<li><strong>2018</strong> : Cours sur <a href="https://openclassrooms.com/fr/" target="_blank" title="J'adore !!!">OpenClassrooms</a>, <a href="https://www.sololearn.com/" target="_blank">SoloLearn</a> et <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" title="Clic clic, il est vachement sympa ce lien">MDN</a></li>
-						</ul>
-				</div>
-			</article>
-			<script type="text/javascript">alert("Bonjour et bienvenue sur une énième page de test!")</script>
+    <section class="section">
+        <div class="container">
+            <p class="subtitle is-5 accroche">C'est en pratiquant que l'on apprend le mieux !</p>
+        </div>
+    </section>
 
-			<footer>
-				<hr>
-				<h2><i class="far fa-comments"> </i> Retrouvez moi sur ...</h2>
-				<ul id="social">
-					<li><a href="https://twitter.com/" title="Twitter" target="_blank" alt="Twitter"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="https://www.facebook.com/" title="Facebook" target="_blank" alt="Facebook"><i class="fab fa-facebook"></i></a></li>
-					<li><a href="https://www.deviantart.com/" title="DeviantArt" alt="DeviantArt" target="_blank"><i class="fab fa-deviantart"></i></a></li>
-					<li><a href="https://fr.linkedin.com/" title="LinkedIn" alt="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-					<li><a href="https://plus.google.com/discover" title="Google+" target="_blank" alt="Google+"><i class="fab fa-google-plus"></i></a></li>
-				</ul>
-			</footer>
-		</div>
-	</div>
+    <section class="section" id="cv">
+        <div class="columns">
+            <div class="column container" id="exp">
+                <div class="heading">
+                    <h3 class="title"><i class="fas fa-cogs" alt=""></i> Mon expérience</h3>
+                    <ul>
+                        <li><strong>Janvier 2017 - Août 2018</strong> : CDD chez <em>Education Nationale</em></li>
+                        <li><strong>Avril 2017 - Décembre 2017</strong> : Stagiaire au <em>Registre des Commerces et des
+                                Sociétés</em></li>
+                        <li><strong>Mon enfance</strong> : Culture geek :]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column container" id="comp">
+                <div class="heading">
+                    <h3 class="title"><i class="fas fa-laptop-code" alt=""></i> Mes compétences</h3>
+                    <ul>
+                        <li>HTML 5</li>
+                        <li>CSS 3 <span class="gray-comp">Bulma, BootStrap, SASS</span></li>
+                        <li>JavaScript <span class="gray-comp">jQuery, Vue.js</span></li>
+                        <li>PHP <span class="gray-comp">Laravel, Composer</span></li>
+                        <li>CMS <span class="gray-comp">Wordpress</span></li>
+                        <li>Outils de développement <span class="gray-comp">Git, Firebase, Heroku, Docker, MySQL
+                                Workbench</span></li>
+                        <li>Recherches sur <a href="https://www.google.com/" target="_blank"
+                                title="Ouvrir Google dans une nouvelle fenêtre">Google</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column container" id="form">
+                <div class="heading">
+                    <h3 class="title"><i class="fas fa-book" alt=""></i> Ma formation</h3>
+                    <ul>
+                        <li>Certification : <em>Coder et déployer une application web simple</em>
+                            <a href="https://inventaire.cncp.gouv.fr/fiches/2077/" target="_blank"
+                                title="Ouvrir la fiche du certificat dans une nouvelle fenêtre">
+                                <i class="fas fa-external-link-alt" alt=""></i>
+                            </a>
+                        </li>
+                        <li>Certification : <em>Méthodes Agiles</em> de gestion et amorçage de projet <a
+                                href="https://inventaire.cncp.gouv.fr/fiches/2085/" target="_blank"
+                                title="Ouvrir la fiche du certificat dans une nouvelle fenêtre">
+                                <i class="fas fa-external-link-alt" alt=""></i></a></li>
+                        <li>Certification : Expert <em>Opquast</em> <a
+                                href="https://directory.opquast.com/fr/certificat/C6Q9BD/" target="_blank"
+                                title="Ouvrir le certificat Opquast dans une nouvelle fenêtre">
+                                <i class="fas fa-external-link-alt" alt=""></i></a></li>
+                        <li><strong>Février 2019 - Août 2019</strong> : Dev Web à <em>Simplon</em></li>
+                        <li><strong>2018</strong> : Cours sur <a href="https://openclassrooms.com/fr/" target="_blank"
+                                title="Ouvrir le site OpenClassrooms dans une nouvelle fenêtre">OpenClassrooms</a>,
+                            <a href="https://www.sololearn.com/" target="_blank"
+                                title="Ouvrir le site SoloLearn dans une nouvelle fenêtre">SoloLearn</a> et <a
+                                href="https://www.codecademy.com/Shi974" target="_blank"
+                                title="Ouvrir CodeCademy dans une nouvelle fenêtre">CodeCademy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="extra">
+        <div class="columns">
+            <div class="column container">
+                <div class="heading">
+                    <h3 class="title"><i class="fas fa-user" alt=""></i> Extra Curricular</h3>
+                    <ul id="extra_ul">
+                        <li><strong>Juin 2019</strong> : <em>WebCup Réunion</em> - 4e place</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="social">
+        <div class="columns">
+            <div class="column container">
+                <div class="heading">
+                    <h3 class="title"><i class="fas fa-comments" alt=""></i> Restons en contact</h3>
+                    <ul id="ul_social">
+                        <li><a href="http://shi974.github.io" target="_blank" title="Ouvrir le portfolio de Anne-Gaëlle dans une nouvelle fenête">
+                            <i class="fas fa-address-card" alt=""></i></a></li>
+                        <li><a href="https://github.com/Shi974" title="Ouvrir la page GitHub dans une nouvelle fenêtre" target="_blank"
+                             alt="GitHub"><i class="fab fa-github" alt=""></i></a></li>
+                        <li><a href="https://codepen.io/shi974/" title="Ouvrir la page CodePen dans une nouvelle fenêtre" target="_blank" 
+                            alt="CodePen"><i class="fab fa-codepen" alt=""></i></a></li>                
+                        <li><a href="https://www.linkedin.com/in/annegaellet/" title="Ouvrir le profil LinkedIn dans une nouvelle fenêtre" 
+                            alt="LinkedIn" target="_blank"><i
+                                    class="fab fa-linkedin" alt=""></i></a></li>
+                        <li><a href="mailto:terrentroy.anne@gmail.com" title="Envoyer un email"><i class="fas fa-envelope" alt=""></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Made with <i class="far fa-heart" alt="love"></i> by <a href="http://shi974.github.io" target="_blank"
+                    title="Ouvrir la page de Anne-Gaëlle dans une nouvelle fenêtre"><strong>Anne-Gaëlle T.</strong></a>
+                | Le code source est sous licence
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

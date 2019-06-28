@@ -1,0 +1,71 @@
+@font-face
+	{
+	    font-family: 'action_manregular';
+	    src: url('ressources/Action_Man-webfont.eot');
+	    src: url('ressources/Action_Man-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('ressources/Action_Man-webfont.woff2') format('woff2'),
+	         url('ressources/Action_Man-webfont.woff') format('woff'),
+	         url('ressources/Action_Man-webfont.ttf') format('truetype'),
+	         url('ressources/Action_Man-webfont.svg#action_manregular') format('svg');
+	    }
+@font-face
+	{
+		font-family: 'Knewave'; src:url('ressources/Knewave.ttf') format('truetype');
+	}	
+
+.hero
+	{
+		font-family: 'action_manregular', 'Verdana', 'sans-serif'; font-size: 4em;
+		text-align: center;
+	}
+
+h3, .accroche {
+    font-family: 'Knewave';
+    text-align: center;
+}
+
+h3 {
+    color: #00d1b2 !important;
+}
+
+ul li {
+    font-size: 1rem !important;
+}
+
+.fa-book, .fa-laptop-code, .fa-cogs, .fa-user, .accroche {
+    color: #209cee !important;
+}
+
+.gray-comp {
+    color: gray;
+}
+
+#extra_ul {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-heart {
+    color: #ff3860;
+}
+
+#ul_social {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+}
+
+#ul_social a {
+    font-size: 2rem !important;
+}
+
+.footer {
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+@media all and (max-width: 340px) {
+    h2 {
+        font-size: 2.5rem !important;
+    }
+}
