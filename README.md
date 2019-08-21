@@ -18,10 +18,10 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
 
 # Websites
   - [Tri Sélectif](https://github.com/Shi974/Tri-Selectif)
-  - Purple Template
+  - [Purple Template](https://shi974.github.io/resources/pf6.PNG)
   - [Create Pro](https://shi974.github.io/resources/pf3.PNG)
   - [Landing Page (réalisé avec le framework Bulma)](https://github.com/Shi974/LandingPage)
-  - [illdy (réalisé en SASS)](https://github.com/Shi974/illdy)
+  - [illdy (réalisé en SASS)](https://github.com/Shi974/illdy) - [Screen](https://shi974.github.io/resources/pf15.PNG)
   - [Refonte du site Zinfos974](https://shi974.github.io/resources/pf2.PNG)
   
 # JavaScript
@@ -31,8 +31,8 @@ Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusiveme
  - [To Do List](https://todo-list974.firebaseapp.com/) - [Code](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
  - [ChatBox](https://github.com/Shi974/chatbox) - [Screen](https://shi974.github.io/resources/pf7.PNG) (réalisé avec Vue.js)
  - [Shifumi](https://github.com/Shi974/shifumi)
- - Kasbrik
- - Dice On!
+ - [Kasbrik](https://shi974.github.io/resources/pf17.png)
+ - [Dice On!](https://shi974.github.io/resources/pf16.PNG)
  - Jeu de devinette
 
 # N'hésitez pas à me contacter pour plus d'infos
