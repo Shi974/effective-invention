@@ -16,21 +16,20 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
   - [Mon CV en ligne](http://annie.alwaysdata.net/)
   - Ma galerie de pages html en PURE CSS
 
-
-# Websites - templates
+# Websites
   - [Tri Sélectif](https://github.com/Shi974/Tri-Selectif)
   - Purple Template
-  - Create Pro
+  - [Create Pro](https://shi974.github.io/resources/pf3.PNG)
   - [Landing Page (réalisé avec le framework Bulma)](https://github.com/Shi974/LandingPage)
   - [illdy (réalisé en SASS)](https://github.com/Shi974/illdy)
-  - BIO (en cours de réalisation)
-
+  - [Refonte du site Zinfos974](https://shi974.github.io/resources/pf2.PNG)
+  
 # JavaScript
 
 Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusivement axés sur du JS.
 
  - [To Do List](https://todo-list974.firebaseapp.com/) - [Code](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
- - [ChatBox](https://github.com/Shi974/chatbox) (réalisé avec Vue.js)
+ - [ChatBox](https://github.com/Shi974/chatbox) - [Screen](https://shi974.github.io/resources/pf7.PNG) (réalisé avec Vue.js)
  - [Shifumi](https://github.com/Shi974/shifumi)
  - Kasbrik
  - Dice On!
