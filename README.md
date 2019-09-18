@@ -33,6 +33,7 @@ Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusiveme
  - [Shifumi](https://github.com/Shi974/shifumi)
  - [Kasbrik](https://shi974.github.io/resources/pf17.png)
  - [Dice On!](https://shi974.github.io/resources/pf16.PNG)
+ - [Joyeux Anniversaire !](https://shi974.github.io/resources/birthday) - (page test jQuery)
  - Jeu de devinette
 
 # N'hésitez pas à me contacter pour plus d'infos
