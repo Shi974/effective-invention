@@ -1,3 +1,5 @@
+<img src="http://coursennord.e-monsite.com/medias/images/bienvenue.png">
+
 # Mon repo pro
 
 Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les liens vers les projets que j'ai eu l'occasion de réaliser. Bonne visite !
@@ -7,6 +9,10 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
   - [ADRIE - application de collecte d'objets inutilisés / déchets](http://adrie-collecte.herokuapp.com)
   - [Projet pour une entreprise - application de vote en ligne - ici la page de gestion des projets](https://shi974.github.io/resources/pf14.PNG)
 
+# Application Web Perso
+
+  - [Réseau social](https://vuegram-d3531.firebaseapp.com/) (réalisé avec Vue.js et Firebase Tools) (en cours de développement)
+
 # Websites perso
 
   - [Mon Portfolio](https://shi974.github.io/)
@@ -14,7 +20,7 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
   - [GDK - 350ms Klub - Projet de groupe](http://gdk-350ms.herokuapp.com)
   - [Annie's World](http://annie.atspace.eu/)
   - [Mon CV en ligne](http://annie.alwaysdata.net/)
-  - Ma galerie de pages html en PURE CSS
+  - Ma galerie de pages html en PURE CSS - visionnable pour la plupart sur mon [CodePen](https://codepen.io/shi974/)
 
 # Websites
   - [Tri Sélectif](https://github.com/Shi974/Tri-Selectif)
@@ -28,7 +34,6 @@ Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les li
 
 Différents petits projets sur lesquels j'ai pu travailler, ils sont exclusivement axés sur du JS.
 
- - [Réseau social](https://vuegram-d3531.firebaseapp.com/) (réalisé avec Vue.js et Firebase Tools) (en cours de développement)
  - [To Do List](https://todo-list974.firebaseapp.com/) - [Code](https://github.com/Shi974/To-Do-List) (réalisé avec Vue.js)
  - [ChatBox](https://github.com/Shi974/chatbox) - [Screen](https://shi974.github.io/resources/pf7.PNG) (réalisé avec Vue.js)
  - [Shifumi](https://github.com/Shi974/shifumi)
