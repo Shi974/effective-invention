@@ -1,5 +1,7 @@
 
-<center><img  src="http://coursennord.e-monsite.com/medias/images/bienvenue.png"></center>
+<p align="center">
+    <img  src="http://coursennord.e-monsite.com/medias/images/bienvenue.png">
+</p>
 :wave: Bonjour à tous et bienvenue sur mon repo GitHub. Vous trouverez ici tous les liens vers les projets que j'ai eu l'occasion de réaliser. N'hésitez pas non plus à aller voir les codes source ! :computer: <br>
 Bonne visite !
 
